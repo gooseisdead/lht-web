@@ -10,6 +10,8 @@ FONTS
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
+
 
 /* ************
 VARIABLES
@@ -21,7 +23,7 @@ VARIABLES
     --white: #ffffff;
     --white-light: #c8c8c8;
     --shadow: 0 0 15px rgba(0,0,0,0.25);
-    --cursive-font: font-family: 'Dancing Script', cursive;
+    --cursive-font: 'Almendra SC', cursive;
     scroll-behavior: smooth;
 }
 
@@ -97,6 +99,37 @@ h6 {
 
 .min-vh-100 {
     min-height: 100vh;
+}
+
+/* ***********
+BUTTONS 
+********** */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    border-radius: 38px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+    color: var(--main-color);
+    line-height: 1.5;
+    user-select: none;
+    border: none;
+}
+
+.btn-default {
+    border: 2px solid var(--main-color);
+}
+
+.btn-default:hover {
+    color: var(--white);
+    border-color: var(--white);
+    background-color: var(--main-color);
 }
 
 /* ************
@@ -248,7 +281,33 @@ home
 ******* */
 
 .home-section {
-    background-color: var(--main-color);
+    position: relative;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.home-section .home-bg {
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-image: url('bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: 10%;
+    z-index: -2;
 }
 
 .home-section .min-vh-100 {
@@ -263,4 +322,17 @@ home
     width: 100%;
     margin: auto;
     text-align: center;
+}
+
+.home-text h1 {
+    font-family: var(--cursive-font);
+    font-size: 60px;
+    line-height: 75px;
+    margin: 0 0 5px;
+
+}
+
+.home-text p{
+    margin: 0 0 30px;
+
 }
