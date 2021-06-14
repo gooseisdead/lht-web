@@ -48,7 +48,7 @@ body {
     /* font-family: 'Bangers', cursive; */
     /* font-family: 'Playball', cursive; */
     font-weight: 300;
-    background-color: red;
+    color: var(--white-light);
 }
 
 a {
@@ -59,6 +59,24 @@ ul {
     list-style: none;
 }
 
+h1 {
+    font-weight: 700;
+    color: var(--white);
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    color: var(--white);
+}
+
 .container {
     max-width: 1178px;
     margin: auto;
@@ -67,6 +85,7 @@ ul {
 .align-items-center {
     align-items: center;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -74,6 +93,10 @@ ul {
 
 .justify-content-between {
     justify-content: space-between;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
 }
 
 /* ************
@@ -148,7 +171,7 @@ img {
 }
 
 .header .nav-toggler span {
-    height: 1px;
+    height: 2px;
     width: 39px;
     display: block;
     background-color: var(--white);
@@ -218,5 +241,26 @@ img {
 
 .header nav ul li a:hover {
     color: var(--main-color);
-    
+}
+
+/* *********
+home
+******* */
+
+.home-section {
+    background-color: var(--main-color);
+}
+
+.home-section .min-vh-100 {
+    padding: 180px 0;
+}
+
+
+
+.home-text {
+    padding: 0 15px;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
 }
