@@ -105,6 +105,34 @@ h6 {
     padding: 88px 0;
 }
 
+/* ************
+SEC TITL 
+************* */
+
+.section-title {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.section-title h2::before {
+    content: attr(data-title);
+    display: block;
+    font-size: 24px;
+    color: var(--main-color);
+    font-family: var(--cursive-font);
+    font-weight: 400;
+    text-transform: capitalize;
+    
+}
+
+
 /* ***********
 BUTTONS 
 ********** */
@@ -332,8 +360,6 @@ home
 .home-section .min-vh-100 {
     padding: 180px 0;
 }
-
-
 
 .home-text {
     padding: 0 15px;
