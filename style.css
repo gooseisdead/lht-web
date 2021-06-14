@@ -48,6 +48,7 @@ body {
     /* font-family: 'Bangers', cursive; */
     /* font-family: 'Playball', cursive; */
     font-weight: 300;
+    background-color: red;
 }
 
 a {
@@ -94,7 +95,29 @@ img {
 
 .header {
     padding: 12px 0;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 99;
+    width: 100%;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
     background-color: var(--dark-light);
+    box-shadow: var(--shadow);
+    z-index: -1;
+    transition: transform 0.5s ease;
+    transform: translateY(-100%);
+}
+
+.header.sticky::before {
+    transform: translateY(0%);
 }
 
 .header .logo {
@@ -116,12 +139,25 @@ img {
     justify-content: center;
 }
 
-.header .nav-toggler span{
-    height: 2px;
+.header .nav-toggler.active {
+    position: absolute;
+    right:0;
+    z-index: 1;
+    transition: all 0.5s ease;
+    transform: translateX(-120px);
+}
+
+.header .nav-toggler span {
+    height: 1px;
     width: 39px;
     display: block;
     background-color: var(--white);
     position: relative;
+}
+
+.header .nav-toggler.active span {
+    background-color: transparent;
+    transition: background-color 0.5s ease;
 }
 
 .header .nav-toggler span::before,
@@ -139,8 +175,18 @@ img {
     transform: translateY(-8px);
 }
 
+.header .nav-toggler.active span::before {
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
 .header .nav-toggler span::after {
     transform: translateY(8px);
+}
+
+.header .nav-toggler.active span::after {
+    transform: rotate(-45deg);
+    transition: transform 0.5s ease;
 }
 
 .header .nav {
@@ -154,7 +200,11 @@ img {
     overflow-y: auto;
     padding: 88px 0 48px;
     transition: transform 0.5s ease;
-    transform: translateY;
+    transform: translateX(100%);
+}
+
+.header nav.open {
+    transform: translateX(0%);
 }
 
 .header .nav ul li a {
