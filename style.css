@@ -23,7 +23,8 @@ VARIABLES
     --white: #ffffff;
     --white-light: #c8c8c8;
     --shadow: 0 0 15px rgba(0,0,0,0.25);
-    --cursive-font: 'Almendra SC', cursive;
+    --cursive-font: 'Playball', cursive;
+    /* --cursive-font: 'Almendra SC', cursive; */
     scroll-behavior: smooth;
 }
 
@@ -79,6 +80,10 @@ h6 {
     color: var(--white);
 }
 
+p {
+    font-size: 16px;
+}
+
 .container {
     max-width: 1178px;
     margin: auto;
@@ -129,7 +134,7 @@ SEC TITL
     font-family: var(--cursive-font);
     font-weight: 400;
     text-transform: capitalize;
-    
+
 }
 
 
@@ -174,6 +179,15 @@ ANIMATION KEYFRAMES
     }
     50% {
         transform: scale(1.1);
+    }
+}
+
+@keyframes spin01 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
     }
 }
 
@@ -388,4 +402,62 @@ ABOUT
 .about-section {
     background-color: var(--dark-light);
 }
+
+.about-text,
+.about-img {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-text h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
+.about-text p {
+    margin: 0 0 15px;
+}
+
+.about-text .btn {
+    margin: 15px 0 0;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-img .img-box {
+    position: relative;
+}
+
+.about-img .img-box::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 3px solid var(--main-color);
+    left: calc(80% - 50px);
+    top: 10%;
+    animation: spin01 10s linear infinite;
+    /* background-color: lavender;
+    opacity: 50%; */
+}
+
+.about-img .img-box h3 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transform: translateY(-50%, -50%);
+    font-size: 33px;
+    font-family: var(--cursive-font);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
 
