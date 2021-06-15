@@ -459,5 +459,10 @@ ABOUT
     text-transform: capitalize;
 }
 
+/* *********
+M ENU SEC 
+********** */
 
-
+.menu-section {
+    background-color: var(--dark);
+}
