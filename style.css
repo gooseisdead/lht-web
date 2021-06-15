@@ -18,7 +18,7 @@ VARIABLES
 *********** */
 :root {
     --main-color: #1ea2e5;
-    --dark: red;
+    --dark: rgba(46, 37, 37, 0.74);
     --dark-light: rgb(12, 10, 10);
     --white: #ffffff;
     --white-light: #c8c8c8;
@@ -471,4 +471,26 @@ M ENU SEC
 
 .menu-section {
     background-color: var(--dark);
+}
+
+.menu-section .section-title {
+    margin-bottom: 40px;
+}
+
+.menu-tabs {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-tab-item {
+    font-size: 18px;
+    font-family: inherit;
+    text-transform: capitalize;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--main-color);
+    cursor: pointer;
+    margin: 0 10px 10px;
 }
