@@ -495,13 +495,54 @@ M ENU SEC
     border: none;
     background-color: transparent;
     font-weight: 500;
-    color: var(--main-color);
+    color: var(--white);
     cursor: pointer;
     margin: 0 10px 10px;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .menu-tab-item.active {
     color: var(--main-color);
-
 }
+
+
+
+.menu-item {
+    width: 50%;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-item-title {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item-title h3 {
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover .menu-item-title h3 {
+    color: var(--main-color);
+}
+
+.menu-item-title img {
+    max-width: 100px;
+    margin-right: 15px;
+}
+
+.menu-item-price {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.menu-item:hover .menu-item-price {
+    color: var(--white);
+}
+
