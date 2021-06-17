@@ -1,4 +1,23 @@
-
+const menuCollectionDiv = document.querySelector(".menu-section")
+const menuItems =  [
+        {
+          "id": 1,
+          "name": "food",
+          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+          "price": 33
+        },
+        {
+          "id": 2,
+          "name": "food",
+          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+          "price": 34
+        },
+        {
+          "id": 3,
+          "name": "food",
+          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+          "price": 35
+    }]
 
 // **********
 // toggle navbar
@@ -23,6 +42,13 @@ document.addEventListener("click", function(e) {
     }
 })
 
+document.addEventListener("click", function(e) {
+    if (e.target.closest(".menu-tab-item")) {
+        renderAllMenuItems(menuItems);
+    }
+    console.log("working")
+})
+
 // ************
 // STICKY HEADER 
 // **************
@@ -35,4 +61,15 @@ window.addEventListener("scroll", function() {
     }
 })
 
-
+function renderMenu(menuItem) {
+    const menuCard = document.querySelector(".menu-item")
+    menuCard.innerHTML = `
+      <img src=${menuItem.image} class="menu-avatar" />
+      <h2>${menuItem.name}</h2>
+      <p>${menuItem.price}</p>`
+    menuCollectionDiv.append(menuCard)
+  }
+  
+  function renderAllMenuItems(menuArray) {
+    menuArray.forEach(renderMenu)
+  }
