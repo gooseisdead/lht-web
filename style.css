@@ -514,17 +514,35 @@ M ENU SEC
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
+
+.menu-item::after {
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    border-bottom: 1px dotted var(--dark-light)
+}
+
+.menu-item:nth-last-of-type(2)::after,
+.menu-item:nth-last-of-type(1)::after {
+    border: none;
+}
+
 
 .menu-item-title {
     display: flex;
     align-items: center;
+    max-width: calc(100% - 80px);
 }
 
 .menu-item-title h3 {
     font-size: 16px;
     text-transform: capitalize;
     transition: color 0.3s ease;
+    
 }
 
 .menu-item:hover .menu-item-title h3 {

@@ -1,22 +1,24 @@
-const menuCollectionDiv = document.querySelector(".menu-section")
+const menuSection = document.querySelector(".menu-section")
+const menuRow =  document.querySelector(".menu-tab-content")
 const menuItems =  [
         {
           "id": 1,
           "name": "food",
-          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-          "price": 33
+          "description": "classic burger with toppings",
+          "price": 33,
+          "menu": "dinner"
         },
         {
           "id": 2,
-          "name": "food",
-          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-          "price": 34
+          "name": "drugs",
+          "price": 34,
+          "menu": "brunch"
         },
         {
           "id": 3,
-          "name": "food",
-          "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-          "price": 35
+          "name": "apples",
+          "price": 35,
+          "menu": "beer"
     }]
 
 // **********
@@ -42,12 +44,12 @@ document.addEventListener("click", function(e) {
     }
 })
 
-document.addEventListener("click", function(e) {
-    if (e.target.closest(".menu-tab-item")) {
-        renderAllMenuItems(menuItems);
-    }
-    console.log("working")
-})
+// document.addEventListener("click", function(e) {
+//     if (e.target.closest(".menu-tab-item")) {
+//         renderAllMenuItems(menuItems);
+//     }
+//     console.log("working")
+// })
 
 // ************
 // STICKY HEADER 
@@ -61,15 +63,25 @@ window.addEventListener("scroll", function() {
     }
 })
 
-function renderMenu(menuItem) {
-    const menuCard = document.querySelector(".menu-item")
-    menuCard.innerHTML = `
-      <img src=${menuItem.image} class="menu-avatar" />
-      <h2>${menuItem.name}</h2>
-      <p>${menuItem.price}</p>`
-    menuCollectionDiv.append(menuCard)
-  }
+const menuTabs = document.querySelector(".menu-tabs")
+menuTabs.addEventListener("click", function(e) {
+    if (e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")) {
+        const target = e.target.getAttribute("data-target")
+        console.log(target)
+    }
+})
+
+// function renderMenu(menuItem) {
+//     const menuCard = document.createElement("div")
+//     menuCard.classList.add("menu-item")
+//     menuCard.innerHTML = `
+//       <h3>${menuItem.name}</h3>
+//       <h6>${menuItem.description}</h6>
+//       <p>${menuItem.price}</p>`
+//     menuRow.append(menuCard)
+//   }
   
-  function renderAllMenuItems(menuArray) {
-    menuArray.forEach(renderMenu)
-  }
+//   function renderAllMenuItems(menuArray) {
+//     menuArray.forEach(renderMenu)
+//   }
+
