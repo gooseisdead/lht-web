@@ -475,6 +475,7 @@ M ENU SEC
 
 .menu-section {
     background-color: var(--dark);
+    padding-bottom: 40px;
 }
 
 .menu-section .section-title {
@@ -505,8 +506,6 @@ M ENU SEC
 .menu-tab-item.active {
     color: var(--main-color);
 }
-
-
 
 .menu-item {
     width: 50%;
