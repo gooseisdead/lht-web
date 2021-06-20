@@ -1,26 +1,4 @@
 
-// const menuRow =  document.querySelector(".menu-tab-content")
-// const menuArray =  [
-//         {
-//           "id": 1,
-//           "name": "food",
-//           "description": "classic burger with toppings",
-//           "price": 33,
-//           "menu": "dinner"
-//         },
-//         {
-//           "id": 2,
-//           "name": "drugs",
-//           "price": 34,
-//           "menu": "brunch"
-//         },
-//         {
-//           "id": 3,
-//           "name": "apples",
-//           "price": 35,
-//           "menu": "beer"
-//     }]
-
 // **********
 // toggle navbar
 // **********
@@ -44,12 +22,6 @@ document.addEventListener("click", function(e) {
     }
 })
 
-// document.addEventListener("click", function(e) {
-//     if (e.target.closest(".menu-tab-item")) {
-//         renderAllMenuItems(menuItems);
-//     }
-//     console.log("working")
-// })
 
 // ************
 // STICKY HEADER 
@@ -63,80 +35,16 @@ window.addEventListener("scroll", function() {
     }
 })
 
-const menuTabs = document.querySelector(".menu-tabs")
-menuTabs.addEventListener("click", function(e) {
-  if (e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")) {
-    const target = e.target.getAttribute("data-target");
-    menuTabs.querySelector(".active").classList.remove("active");
-    e.target.classList.add("active")
-    const menuSection = document.querySelector(".menu-section");
-    menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
-    menuSection.querySelector(target).classList.add("active");
-  }
-})
 
+const menuTabs = document.querySelector(".menu-tabs");
+menuTabs.addEventListener("click", function(e){
+   if(e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")){
+      const target = e.target.getAttribute("data-target");
+      menuTabs.querySelector(".active").classList.remove("active");
+      e.target.classList.add("active");
+      const menuSection = document.querySelector(".menu-section");
+      menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
+      menuSection.querySelector(target).classList.add("active");
+   }
+});
 
-// const menuTabs = document.querySelector(".menu-tabs")
-// menuTabs.addEventListener("click", function(e) {
-//     if (e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")) {
-//         const target = e.target.getAttribute("data-target");
-//         menuTabs.querySelector(".active").classList.remove("active")
-//         e.target.classList.add("active")
-//         const menuSection = document.querySelector(".menu-section")
-//         menuSection.querySelector(".menu-tab-content.active").classList.remove("active")
-//         menuSection.querySelector(target).classList.add("active");
-//         function workPlease() {
-//             if (target === "#brunch") {
-//                 console.log("working")
-//             }
-//         }
-//         workPlease()
-//     }
-// })
-
-// const menuTabs = document.querySelector(".menu-tabs")
-// menuTabs.addEventListener("click", function(e) {
-//     if (e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")) {
-//         const target = e.target.getAttribute("data-target");
-//         e.target.classList.add("active")
-//         const menuSection = document.querySelector(".menu-section")
-//         menuSection.querySelector(".menu-tab-content.active").classList.remove("active")
-//         menuSection.querySelector(target).classList.add("active");
-//     }
-// })
-
-// const menuTabs = document.querySelector(".menu-tabs")
-// menuTabs.addEventListener("click", function(e) {
-//     if (e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")) {
-//         const target = e.target.getAttribute("data-target");
-//         menuTabs.querySelector(".active").classList.remove("active")
-//         e.target.classList.add("active")
-//         const menuSection = document.querySelector(".menu-section")
-//         menuSection.querySelector(".menu-tab-content.active").classList.remove("active")
-//         menuSection.querySelector(target).classList.add("active");
-//         function renderMenus() {
-//             if (target === "#brunch") {
-//                 console.log("works")
-//             }
-//         }
-//     }
-            
-// })
-
-
-
-
-
-// function renderMenu(menuItem) {
-//     const menuCard = document.createElement("div")
-//     menuCard.classList.add("menu-item")
-//     menuCard.innerHTML = `
-//       <h3>${menuItem.name}</h3>
-//       <h6>${menuItem.description}</h6>
-//       <p>${menuItem.price}</p>`
-//     menuRow.append(menuCard)
-//   }
-  
-//   function renderAllMenuItems(menuArray) {
-//     menuArray.forEach(renderMenu)
-//   }
