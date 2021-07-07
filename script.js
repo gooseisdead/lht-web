@@ -1,4 +1,37 @@
-
+const cocktails = `<div class="cocktail-item">
+<h2>cocktail item</h2>
+<p class="ings">booze, booze, booze</p>
+<p class="menu-item-price">$12</p>
+</div>
+<br>
+<div class="cocktail-item">
+<h2>cocktail item</h2>
+<p class="ings">booze, booze, booze</p>
+<p class="menu-item-price">$12</p>
+</div>
+<br>
+<div class="cocktail-item">
+<h2>cocktail item</h2>
+<p class="ings">booze, booze, booze</p>
+<p class="menu-item-price">$12</p>
+</div>
+<br>
+<div class="cocktail-item">
+<h2>cocktail item</h2>
+<p class="ings">booze, booze, booze</p>
+<p class="menu-item-price">$12</p>
+</div><br>
+<div class="cocktail-item">
+<h2>cocktail item</h2>
+<p class="ings">booze, booze, booze</p>
+<p class="menu-item-price">$12</p>
+</div>
+<br>
+<div class="cocktail-item">
+<h2>cocktail item</h2>
+<p class="ings">booze, booze, booze</p>
+<p class="menu-item-price">$12</p>
+</div>`
 
 // **********
 // toggle navbar
@@ -48,8 +81,8 @@ function showBrunch() {
 }
 
 function showCocktails() {
-    shownMenuItems.innerHTML = 
-        `<p>cocktails</p> `
+    shownMenuItems.innerHTML = cocktails
+    
 }
 
 function showBeer() {
@@ -59,7 +92,13 @@ function showBeer() {
 
 function showFood() {
     shownMenuItems.innerHTML = 
-        `<p>food</p> `
+        `<div class="food-item">
+        <h2>our famous wings</h2>
+        <p class="sauces">mild • medium • hot • nuclear • ass-burner • teriyaki • bbq • cajun</p>
+        <p class="sides">served with celery sticks & blue cheese</p>
+        <p>10 pc </p><p class="menu-item-price">$14</p>
+        <p>20 pc </p><p class="menu-item-price">$22</p>
+        </div>`
 }
 
 function showDesserts() {
