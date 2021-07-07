@@ -62,7 +62,7 @@
         <div class="container">
             <div class="row">
                 <div class="section-title">
-                    <h2 data-title="our story">about us</h2>
+                    <h2 class="about-header" data-title="our story">about us</h2>
                 </div>
             </div>
             <div class="row">
@@ -88,7 +88,7 @@
                 <div class="about-img">
                     <div class="img-box">
                         <h3>Manhattan's #MetsBar since 2002</h3>
-                        <img src="about-img-2.png" alt="about img">
+                        <img src="food.png" alt="about img">
                     </div>
                 </div>
             </div>
@@ -104,24 +104,28 @@
     *********** -->
 
     <section class="menu-section sec-padding" id="menu">
-        <div class="container">
+        <div class="menu-container">
             <div class="row">
                 <div class="section-title">
-                    <h2 data-title="order now">menu</h2>
+                    <h2 data-title="order now" class="test">menu</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="menu-tabs">
-                    <button type="button" class="menu-tab-item active" data-target="#dinner">dinner</button>
-                    <button type="button" class="menu-tab-item" data-target="#brunch">brunch</button>
-                    <button type="button" class="menu-tab-item" data-target="#beer">beer & wine</button>
-                    <button type="button" class="menu-tab-item" data-target="#cocktails">cocktails</button>
-                    <button type="button" class="menu-tab-item" data-target="#desserts">desserts</button>
+                    <button type="button" class="menu-tab-item" id="dinner" data-target="#dinner">dinner</button>
+                    <button type="button" class="menu-tab-item" id="brunch" data-target="#brunch">brunch</button>
+                    <button type="button" class="menu-tab-item" id="beers" data-target="#beer">beer & wine</button>
+                    <button type="button" class="menu-tab-item" id="cocktails" data-target="#cocktails">cocktails</button>
+                    <button type="button" class="menu-tab-item" id="desserts" data-target="#desserts">desserts</button>
+                    <br>
+                    <br>
+                    <div class="shown-menu-items"></div>
                 </div>
             </div>
             
+            
 
-            <div class="row menu-tab-content active" id="dinner">
+            <!-- <div class="row menu-tab-content active" id="dinner">
                 <div class="menu-item">
                     <div class="menu-item-title">
                         <img src="food.png" alt="food item thumbnail">
@@ -291,7 +295,7 @@
                     <div class="menu-item-price">
                         $40
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

@@ -1,4 +1,5 @@
 
+
 // **********
 // toggle navbar
 // **********
@@ -10,7 +11,6 @@ function toggleNav() {
     navToggler.classList.toggle("active");
     document.querySelector(".nav").classList.toggle("open");
 }
-
 
 // ************
 // close nav when clicking on a new item
@@ -37,14 +37,60 @@ window.addEventListener("scroll", function() {
 
 
 const menuTabs = document.querySelector(".menu-tabs");
-menuTabs.addEventListener("click", function(e){
-   if(e.target.classList.contains("menu-tab-item") && !e.target.classList.contains("active")){
-      const target = e.target.getAttribute("data-target");
-      menuTabs.querySelector(".active").classList.remove("active");
-      e.target.classList.add("active");
-      const menuSection = document.querySelector(".menu-section");
-      menuSection.querySelector(".menu-tab-content.active").classList.remove("active");
-      menuSection.querySelector(target).classList.add("active");
-   }
-});
+
+const menuContainer = document.querySelector(".menu-container")
+const shownMenuItems = document.querySelector(".shown-menu-items")
+
+
+function showBrunch() {
+    shownMenuItems.innerHTML = 
+        `<p>brunch</p> `
+}
+
+function showCocktails() {
+    shownMenuItems.innerHTML = 
+        `<p>cocktails</p> `
+}
+
+function showBeer() {
+    shownMenuItems.innerHTML = 
+        `<p>beers</p> `
+}
+
+function showFood() {
+    shownMenuItems.innerHTML = 
+        `<p>food</p> `
+}
+
+function showDesserts() {
+    shownMenuItems.innerHTML = 
+        `<p>dessert</p> `
+}
+
+menuTabs.addEventListener("click", function(e) {
+    if (e.target.id === "brunch") {
+        showBrunch()
+    } else if (e.target.id === "cocktails") {
+        showCocktails()
+    } else if (e.target.id === "dinner") {
+        showFood() 
+    } else if (e.target.id === "beers") {
+        showBeer()
+    } else if (e.target.id === "desserts") {
+        showDesserts()
+    }
+    
+})
+
+// const testSpot = document.querySelector(".menu-item-title")
+
+
+// const testButton = document.querySelector(".test")
+// testButton.addEventListener("click", function(e) {
+//     showBrunch()
+// })
+
+
+
+
 
