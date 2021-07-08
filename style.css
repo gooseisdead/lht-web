@@ -592,3 +592,30 @@ M ENU SEC
     transition: color 0.3s ease;
     display: inline-block;
 }
+
+/* .cocktail-items {
+    background-color: #1ea2e5;
+    margin-left: 200px;
+    margin-right: 200px;
+} */
+
+.served {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.inline {
+    display:inline-block;
+}
+
+.all-cocktails {
+    margin-left: 140px;
+    margin-right: 140px;
+    border-style: dotted ;
+    /* background-image: url("logo.png"); */
+}
+
+#beer-menu-container {
+    margin-left: 40px;
+    margin-right: 40px;
+}
