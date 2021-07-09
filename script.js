@@ -64,10 +64,33 @@ const foodItems =
         </div>
         <br>
         <div class="food-item">
-            <h2>hand cut fries or tater tots</h2> 
-            <p class="menu-item-price inline">&nbsp;&nbsp; $8</p>
+            <h2 inline>hand cut fries or tater tots</h2> <h2 class="menu-item-price inline">&nbsp;&nbsp; $8</h2>
             <br>
-            <p class="inline">make 'em cajun!<p class="menu-item-price inline">&nbsp;&nbsp; +$1</p>
+            <p class="inline">make 'em CAJUN<p class="menu-item-price inline">&nbsp;&nbsp; +$1</p>
+            <p class="inline">add CHEESE<p class="menu-item-price inline">&nbsp;&nbsp; +$3</p>
+            <br>
+            <h3>disco style</h3>
+            <p>swimming in brown gravy, with melted cheddar and mozzarella blend</p>
+            <p class="menu-item-price">$14.50</p>
+            <h3>chili cheese</h3>
+            <p>heaped with our homemade spicy chili, melted cheddar and mozzarella blend</p>
+            <p class="menu-item-price">$14.50</p>
+            <h3>loaded!</h3>
+            <p>melted cheddar and mozzarella, crispy bacon, sour cream & scallion</p>
+            <p class="menu-item-price">$14.50</p>
+        </div>
+        <div class="food-item">
+            <h2>nachos grande</h2>
+            <h3 class="menu-item-price">$13</h3>
+            <p>house-fried tortilla chips, onions, tomatoes, jalapeños, cheddar and mozzarella</p>
+            <p>homemade beef chili</p>
+            <p class="served">served with sour cream and salsa on the side</p>
+            <p class="inline">substitute pulled pork or grilled chicken<p class="menu-item-price inline">&nbsp;&nbsp; +$2</p>
+            <p class="inline">or try them with grilled steak<p class="menu-item-price inline">&nbsp;&nbsp; +$5</p>
+            <br>
+            <br>
+            <h3>make 'em TOT-CHOS</h3>
+            <p class="inline">our nachos served over a bed of tater tots<p class="menu-item-price inline">&nbsp;&nbsp; +$2</p>
         </div>
         `
 
@@ -132,10 +155,10 @@ function showCocktails() {
 
 function showBeer() {
     shownMenuItems.innerHTML = 
-    `<div id="beer-menu-container"></div>
-                    <script type="text/javascript">`
-                      !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
-                    `</script>`
+        `<div id="beer-menu-container"></div>
+        <script type="text/javascript">`
+          !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
+        `</script>`
 }
 
 function showFood() {
@@ -169,6 +192,24 @@ menuTabs.addEventListener("click", function(e) {
 // testButton.addEventListener("click", function(e) {
 //     showBrunch()
 // })
+
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+const menuNavbar = document.querySelector(".menu-tabs-navbar")
+
+// Get the offset position of the navbar
+const menuSticky = menuNavbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= menuSticky) {
+    menuNavbar.classList.add("sticky")
+  } else {
+    menuNavbar.classList.remove("sticky");
+  }
+}
 
 
 
