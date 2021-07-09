@@ -205,9 +205,9 @@ const menuSticky = menuNavbar.offsetTop;
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset >= menuSticky) {
-    menuNavbar.classList.add("sticky")
+    menuNavbar.classList.add("sticky-menu")
   } else {
-    menuNavbar.classList.remove("sticky");
+    menuNavbar.classList.remove("sticky-menu");
   }
 }
 
