@@ -12,18 +12,25 @@ FONTS
 
 @import url('https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Water+Brush&display=swap');
+
 
 /* ************
 VARIABLES
 *********** */
 :root {
-    --main-color: #1ea2e5;
-    --dark: rgba(46, 37, 37, 0.74);
-    --dark-light: rgb(12, 10, 10);
+    --main-color: #146c7c;
+    /* --main-color: hwb(196 25% 65%); */
+    --dark:  #146c7c;
+    /* --dark: rgba(46, 37, 37, 0.74); */
+    --dark-light:  #146c7c;
+    /* --dark-light: rgb(12, 10, 10); */
     --white: #ffffff;
     --white-light: #c8c8c8;
     --shadow: 0 0 15px rgba(0,0,0,0.25);
-    --cursive-font: 'Playball', cursive;
+    --cursive-font: 'Water Brush', cursive;
     /* --cursive-font: 'Almendra SC', cursive; */
     scroll-behavior: smooth;
 }
@@ -153,14 +160,14 @@ BUTTONS
     font-size: 16px;
     cursor: pointer;
     font-family: inherit;
-    color: var(--main-color);
+    color: white;
     line-height: 1.5;
     user-select: none;
     border: none;
 }
 
 .btn-default {
-    border: 2px solid var(--main-color);
+    border: 3px solid white;
 }
 
 .btn-default:hover {
@@ -201,7 +208,7 @@ img {
 }
 
 .logo-img{
-    zoom: 17%;
+    zoom: 3%;
 }
 
 .food-img {
@@ -366,14 +373,23 @@ home
     top:0;
     height: 100%;
     width: 100%;
-    background-image: url('bg.png');
+    background-image: url('bird-logo-trans.png');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    opacity: 10%;
+    opacity: 53%;
     z-index: -2;
     animation: zoomInOut 20s ease infinite;
 }
+
+.home-bg {
+    padding: 0 115px;
+    max-width: 700px;
+    width: 100%;
+    margin-left: 40%;
+    text-align: center;
+}
+
 
 .home-section .min-vh-100 {
     padding: 180px 0;
