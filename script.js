@@ -49,6 +49,7 @@ const cocktails =
             <p class="ings">grey whale gin, canton ginger liqueur, celery & cucumber juice</p>
             <p class="menu-item-price">$12</p>
         </div>
+        <a href="#menu" class="back-to-top-click">back to top</a>
         </div>`
 
 const foodItems = 
@@ -92,6 +93,7 @@ const foodItems =
             <h3>make 'em TOT-CHOS</h3>
             <p class="inline">our nachos served over a bed of tater tots<p class="menu-item-price inline">&nbsp;&nbsp; +$2</p>
         </div>
+        <a href="#menu" class="back-to-top-click">back to top</a>
         `
 
 // const beerItems = 
@@ -145,7 +147,8 @@ const shownMenuItems = document.querySelector(".shown-menu-items")
 
 function showBrunch() {
     shownMenuItems.innerHTML = 
-        `<p>brunch</p> `
+        `<p>brunch</p>
+        <a href="#menu" class="back-to-top-click">back to top</a>`
 }
 
 function showCocktails() {
@@ -156,9 +159,11 @@ function showCocktails() {
 function showBeer() {
     shownMenuItems.innerHTML = 
         `<div id="beer-menu-container"></div>
+        <a href="#menu" class="back-to-top-click">back to top</a>
         <script type="text/javascript">`
           !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
         `</script>`
+        
 }
 
 function showFood() {
@@ -210,7 +215,6 @@ function myFunction() {
     menuNavbar.classList.remove("sticky-menu");
   }
 }
-
 
 
 

@@ -897,3 +897,11 @@ M ENU SEC
   .menu-section + .menu-tabs-navbar {
     padding-top: 600px;
   }
+
+  .back-to-top-row {
+      margin-left; 50%;
+  }
+
+  .back-to-top-click {
+      justify-content: center;
+  }
