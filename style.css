@@ -386,7 +386,7 @@ home
     padding: 0 115px;
     max-width: 700px;
     width: 100%;
-    margin-left: 40%;
+    margin-left: 20%;
     text-align: center;
 }
 
@@ -640,7 +640,29 @@ M ENU SEC
     background-color: var(--dark);
     padding-bottom: 50px;
 }
-.testi-item{
+
+.testi-item {
+    width: calc((100% / 3) - 30px);
+    margin:0 15px 30px;
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    background-image: url('./tonys.jpg');
+    background-size: contain;
+}
+
+.testi-item-1 {
+    width: calc((100% / 3) - 30px);
+    margin:0 15px 30px;
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    background-size: contain;
+}
+
+.testi-item-2 {
     width: calc((100% / 3) - 30px);
     margin:0 15px 30px;
     border: 2px solid var(--dark-light);
@@ -648,6 +670,16 @@ M ENU SEC
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
+
+.testi-item-3 {
+    width: calc((100% / 3) - 30px);
+    margin:0 15px 30px;
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
 .testi-author{
     display: flex;
     justify-content: space-between;
@@ -670,6 +702,7 @@ M ENU SEC
     box-shadow: var(--shadow);
     transition: border-color 0.5s ease;
 }
+
 .testi-item:hover .testi-author img{
     border-color: var(--main-color);
 }
@@ -905,3 +938,5 @@ M ENU SEC
   .back-to-top-click {
       justify-content: center;
   }
+
+  
