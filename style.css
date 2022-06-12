@@ -23,7 +23,7 @@ VARIABLES
 :root {
     --main-color: #146c7c;
     /* --main-color: hwb(196 25% 65%); */
-    --dark:  #5e6564;
+    --dark:  #146c7c;
     /* --dark: rgba(46, 37, 37, 0.74); */
     --dark-light:  #146c7c;
     /* --dark-light: rgb(12, 10, 10); */
