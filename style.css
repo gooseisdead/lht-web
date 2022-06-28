@@ -422,6 +422,14 @@ ABOUT
 
 .about-section {
     background-color: var(--dark-light);
+    /* background-image: url(IMG_3214.jpg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-attachment: local;
+  justify-content: center; */
+   
+   
+    
 }
 
 .about-text,
