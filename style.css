@@ -363,7 +363,7 @@ home
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #716b6b;
+    background-color:rgb(192, 193, 193);
     opacity: 0.7;
     z-index: -1;
 }
@@ -420,29 +420,40 @@ home
 ABOUT
 *********** */
 
+
 .about-section {
     background-color: var(--dark-light);
-    /* background-image: url(IMG_3214.jpg);
+    background-image: url(IMG_3213.jpg);
   background-repeat: no-repeat;
   background-size: 90%;
-  background-attachment: local; */
+  background-attachment: local;
     
 }
 
-.about-text,
+.about-text-div {
+    width: 50%;
+    padding: 0 15px;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0 0 15px;
+}
+
 .about-img {
     width: 50%;
     padding: 0 15px;
 }
 
 .about-text h3 {
-    font-size: 30px;
-    text-transform: capitalize;
-    margin: 0 0 15px;
+    /* background-color: black;
+    opacity: 15%; */
+    background: rgba(41, 40, 40, 0.6);
+    border-radius: 5px;
 }
 
 .about-text p {
     margin: 0 0 15px;
+    background: rgba(41, 40, 40, 0.6);
+    border-radius: 5px;
 }
 
 .about-text .btn {
@@ -948,15 +959,13 @@ M ENU SEC
   * {box-sizing:border-box}
 
 /* Slideshow container */
+* {box-sizing:border-box}
+
+/* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 1000px;
   position: relative;
   margin: auto;
-
-  /* position: absolute;
-  max-height: 50px;
-    width: 70%;
-    z-index: 0; */
 }
 
 /* Hide the images by default */
@@ -1037,10 +1046,3 @@ M ENU SEC
   from {opacity: .4}
   to {opacity: 1}
 }
-
-.show-text {
-    --cursive-font: 'Water Brush', cursive;
-}
-
-
-  
