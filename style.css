@@ -247,10 +247,12 @@ img {
     z-index: -1;
     transition: transform 0.5s ease;
     transform: translateY(-100%);
+    overflow-x: hidden;
 }
 
 .header.sticky::before {
     transform: translateY(0%);
+    overflow-x: hidden;
 }
 
 .header .logo {
