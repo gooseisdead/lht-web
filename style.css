@@ -43,6 +43,8 @@ VARIABLES
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    overflow-x: hidden;
+   
 }
 
 ::before,
@@ -59,6 +61,8 @@ body {
     /* font-family: 'Playball', cursive; */
     font-weight: 300;
     color: var(--white-light);
+    width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -227,6 +231,7 @@ img {
     top:0;
     z-index: 99;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .header::before {
@@ -491,7 +496,7 @@ ABOUT
     max-width: 250px;
     text-align: center;
     transform: translateY(-50%, -50%);
-    font-size: 30px;
+    font-size: 19px;
     font-family: var(--cursive-font);
     font-weight: bold;
     text-transform: capitalize;
