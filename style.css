@@ -457,6 +457,7 @@ ABOUT
     font-size: 30px;
     text-transform: capitalize;
     margin: 0 0 15px;
+    overflow-x: hidden;
 }
 
 .about-img {
