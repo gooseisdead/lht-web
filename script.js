@@ -6,7 +6,7 @@ const cocktails =
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>shy & humble</h2>
+            <h2>shy + humble</h2>
             <p class="ings">himbrini winterbird gin, gran marnier, pear brandy, jasmine, lemon</p>
         </div>
         <br>
@@ -53,51 +53,66 @@ const cocktails =
             <h2>only fans</h2>
             <p class="ings">smoke lab vodka, guava, lemon, sidecar of bubbles</p>
         </div>
-        <a href="#menu" class="back-to-top-click">back to top</a>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>
         </div>`
 
 const foodItems = 
-        `<div class="food-item">
-            <h2>our famous wings</h2>
-            <p class="sauces">mild • medium • hot • nuclear • ass-burner • teriyaki • BBQ • cajun</p>
-            <p class="served">served with celery sticks & blue cheese</p>
-            <p class="inline">10 pc </p><p class="menu-item-price inline">&nbsp;&nbsp; $14.50</p>
-            <p class="inline">20 pc </p><p class="menu-item-price inline">&nbsp;&nbsp; $27</p>
-            <br>
-            <p class="inline"> extra blue cheese </p><p class="menu-item-price inline">&nbsp;&nbsp; .50¢</p>
-            <p class="inline"> well done </p><p class="menu-item-price inline">&nbsp;&nbsp; $1</p>
-        </div>
-        <br>
+        `<div class="all-food-items">
+            <div class="food-item">
+            <h2>charcuterie<h2>
+            <p>selection of cured meats and cheeses, spreads and fruit</p>
+            <h1 class="menu-item-price inline">&nbsp;&nbsp;$22</p>
+            <h2>wings</h2>
+            <p class="sauces">asian • buffalo jerk</p>
+            <h1 class="menu-item-price inline">&nbsp;&nbsp;$12</p>
+            </div>
         <div class="food-item">
-            <h2 inline>hand cut fries or tater tots</h2> <h2 class="menu-item-price inline">&nbsp;&nbsp; $8</h2>
-            <br>
-            <p class="inline">make 'em CAJUN<p class="menu-item-price inline">&nbsp;&nbsp; +$1</p>
-            <p class="inline">add CHEESE<p class="menu-item-price inline">&nbsp;&nbsp; +$3</p>
-            <br>
-            <h3>disco style</h3>
-            <p>swimming in brown gravy, with melted cheddar and mozzarella blend</p>
-            <p class="menu-item-price">$14.50</p>
-            <h3>chili cheese</h3>
-            <p>heaped with our homemade spicy chili, melted cheddar and mozzarella blend</p>
-            <p class="menu-item-price">$14.50</p>
-            <h3>loaded!</h3>
-            <p>melted cheddar and mozzarella, crispy bacon, sour cream & scallion</p>
-            <p class="menu-item-price">$14.50</p>
+            <h2>deviled-eggs</h2>
+            <p>with prosciutto, crispy onion, and chives</p>
+            <h1 class="menu-item-price">$12</h1>
         </div>
         <div class="food-item">
-            <h2>nachos grande</h2>
-            <h3 class="menu-item-price">$13</h3>
-            <p>house-fried tortilla chips, onions, tomatoes, jalapeños, cheddar and mozzarella</p>
-            <p>homemade beef chili</p>
-            <p class="served">served with sour cream and salsa on the side</p>
-            <p class="inline">substitute pulled pork or grilled chicken<p class="menu-item-price inline">&nbsp;&nbsp; +$2</p>
-            <p class="inline">or try them with grilled steak<p class="menu-item-price inline">&nbsp;&nbsp; +$5</p>
-            <br>
-            <br>
-            <h3>make 'em TOT-CHOS</h3>
-            <p class="inline">our nachos served over a bed of tater tots<p class="menu-item-price inline">&nbsp;&nbsp; +$2</p>
+            <h2>beet tartare</h2>
+            <p>red beets, avocado, frisse, mache, goat cheese, almond, rye crackers</p>
+            <h1 class="menu-item-price">$16</h3>
         </div>
-        <a href="#menu" class="back-to-top-click">back to top</a>
+        <div class="food-item">
+            <h2>harlem harvest</h2>
+            <p>arugala, baby spinach, asparagus, radish, shaved parmesean, crispy chick peas, lemon tarmeric tahini</p>
+            <h1 class="menu-item-price">$10</h3>
+        </div>
+        <div class="food-item">
+            <h2>fried cauliflower</h2>
+            <p>vegan ranch</p>
+            <h1 class="menu-item-price">$10</h3>
+        </div>
+        <div class="food-item">
+            <h2>zucchini blossoms</h2>
+            <p>zucchini flowers, ricotta, reggiano, crispy capers, saffron aioli</p>
+            <h1 class="menu-item-price">$15</h1>
+        </div>
+        <div class="food-item">
+            <h2 inline>truffle mac</h2>
+            <p>gruyere and new york cheddar, grana padana, truffle, panko</p>
+            <h1 class="menu-item-price inline">&nbsp;&nbsp;$18</h2>
+        </div>
+        <div class="food-item">
+            <h2>fried pickles</h2>
+            <p>buttermilk aioli</p>
+            <h1 class="menu-item-price">$10</h3>
+        </div>
+        <div class="food-item">
+            <h2>lobster bao</h2>
+            <p>maine lobster, asian slaw, hoisin, cilantro, mint, bao bun</p>
+            <h1 class="menu-item-price">$22</h3>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>
+        </div>
+        
         `
 
 // const beerItems = 
@@ -152,7 +167,9 @@ const shownMenuItems = document.querySelector(".shown-menu-items")
 function showBrunch() {
     shownMenuItems.innerHTML = 
         `<p>brunch</p>
-        <a href="#menu" class="back-to-top-click">back to top</a>`
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
 }
 
 function showCocktails() {
@@ -163,7 +180,9 @@ function showCocktails() {
 function showBeer() {
     shownMenuItems.innerHTML = 
         `<div id="beer-menu-container"></div>
-        <a href="#menu" class="back-to-top-click">back to top</a>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>
         <script type="text/javascript">`
           !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
         `</script>`
@@ -176,7 +195,10 @@ function showFood() {
 
 function showDesserts() {
     shownMenuItems.innerHTML = 
-        `<p>dessert</p> `
+        `<p>dessert</p> 
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
 }
 
 menuTabs.addEventListener("click", function(e) {
