@@ -159,7 +159,7 @@ function showWine() {
         `<h2>wine</h2>
         <h1 class="menu-item-price">$10</h1>
         <p>woffler estate rose<br>
-            forge cellars reisling dry classique<br>
+            forge cellars reisling dry<br>
             bridge lane sauvignon blanc<br>
             woffler estate chardonnay<br>
             bridge lane red blend<br>
