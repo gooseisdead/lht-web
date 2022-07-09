@@ -70,7 +70,7 @@ const foodItems =
             </div>
         <div class="food-item">
             <h2>deviled-eggs</h2>
-            <p>with prosciutto, crispy onion, and chives</p>
+            <p>prosciutto, crispy onion, and chives</p>
             <h1 class="menu-item-price">$12</h1>
         </div>
         <div class="food-item">
