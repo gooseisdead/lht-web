@@ -61,7 +61,7 @@ html, body {
     font-size: 16px;
     line-height: 1.5;
     -webkit-tap-highlight-color: transparent;
-    font-family: 'Poppins', sans-serif;
+    family: 'Poppins', sans-serif;
     /* font-family: 'Bangers', cursive; */
     /* font-family: 'Playball', cursive; */
     font-weight: 300;
@@ -110,7 +110,7 @@ p {
 }
 
 .row {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
 }
 
@@ -674,7 +674,32 @@ M ENU SEC
     margin-left: 15%;
     margin-right: 15%;
     font-family: 'Smythe', cursive;
+    zoom: 100%;
     /* background-image: url("logo.png"); */
+}
+
+.all-cocktails h2 {
+    font-size: 44px;
+    color: #146c7c;
+    text-shadow: 0 0 0.5em #909299;
+  text-shadow: 0 0 1px rgb(116, 111, 111),
+}
+
+.all-cocktails p {
+  font-size: 28px;
+  font-weight: 600;
+  -webkit-text-stroke: .1px rgb(251, 245, 245);
+  color:rgb(209, 194, 175);
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 0.25em #353639;
+  text-shadow: 0 0 5px rgb(9, 9, 9),
+}
+
+.test-sticky {
+    font-size: 44px;
+    color: #eef4f6;
+    text-shadow: 0 0 0.5em #909299;
+  text-shadow: 0 0 1px rgb(116, 111, 111);
 }
 
 #beer-menu-container {
@@ -682,9 +707,18 @@ M ENU SEC
     margin-right: 40px;
 }
 
-.testimonials-section{
+.testimonials-section {
     background-color: var(--white-light);
     padding-bottom: 50px;
+}
+
+.testimonials-section h2 {
+    font-size: 44px;
+    color: #eef4f6;
+    text-shadow: 0 0 0.5em #909299;
+  text-shadow: 0 0 1px rgb(116, 111, 111);
+    font-family: 'Smythe', cursive;
+    zoom: 100%;
 }
 
 .testi-item {
@@ -975,6 +1009,11 @@ M ENU SEC
     padding-top: 600px;
   }
 
+  .menu-tabs-navbar .menu-tab-item {
+    
+    text-shadow: 0 0 0.15em #e9ebf0;
+    text-shadow: 0 0 1px rgb(197, 189, 189),
+  }
   .back-to-top-row {
       margin-left: 50%;
   }
@@ -1076,3 +1115,11 @@ M ENU SEC
   to {opacity: 1}
 }
 
+.testi-item {
+    width:80%;
+    background-color: #717171;
+  min-height: 100px;
+  float:left;
+  }
+
+  
