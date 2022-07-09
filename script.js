@@ -26,7 +26,7 @@ const cocktails =
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>penicilin</h2>
+            <h2>penicillin</h2>
             <p class="ings">aberfeldy scotch, barrows intense ginger liqueur, honey, lemon</p>
         </div>
         <br>
