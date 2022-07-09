@@ -1,53 +1,57 @@
 const cocktails = 
         `<div class="all-cocktails">
         <div class="cocktail-item">
-            <h2>skew it on the bar-b</h2>
-            <p class="ings">el silencío mexcal, creme de peche, lime juice</p>
-            <p class="menu-item-price">$12</p>
+            <h2>songbird won</h2>
+            <p class="ings">empress gin, st. germaine elderflower, lime</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>la RUMba</h2>
-            <p class="ings">don q pineapple rum, don q cocnut rum, coco lopez, pineapple juice</p>
-            <o class="served">served blended</p>
-            <p class="menu-item-price">$12</p>
+            <h2>shy & humble</h2>
+            <p class="ings">himbrini winterbird gin, gran marnier, pear brandy, jasmine, lemon</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>itsoweezee</h2>
-            <p class="ings">redemption rye, rocky's milk punch, lemonade & iced tea</p>
-            <p class="menu-item-price">$12</p>
+            <h2>there's only one belafonte</h2>
+            <p class="ings">tea-infused maker's mark bourbon, amaro nonino, peach, lemon</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>crush on you</h2>
-            <p class="ings">ten to one white rum, oregat, pineapple & lime juice</p>
-            <p class="served">served over crushed ice with a ten to one dark rum float
-            <p class="menu-item-price">$12</p>
+            <h2>somehow heartbreak feels so good</h2>
+            <p class="ings">ten to one white rum, ume plum liqueur, lime, bubbles, mint</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>ms. fat booty</h2>
-            <p class="ings">empress gin, creme de peche, pineapple juice, champagne</p>
-            <p class="menu-item-price">$12</p>
+            <h2>elote margarita</h2>
+            <p class="ings">milagro reposado tequila, nixta corn liqueur, agave, lime</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>passion me by</h2>
-            <p class="ings">don q passion fruit rum, blank vodka, pama liqueur, orange & cranberry juice</p>
-            <p class="menu-item-price">$12</p>
+            <h2>penicilin</h2>
+            <p class="ings">aberfeldy scotch, barrows intense ginger liqueur, honey, lemon</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>brass monkey</h2>
-            <p class="ings">borough bourbon, dubonnet, campari, orange bitters</p>
-            <p class="menu-item-price">$12</p>
+            <h2>last word</h2>
+            <p class="ings">hendricks gin, green chartreuse, maraschino liqueur, lime</p>
         </div>
         <br>
         <div class="cocktail-item">
-            <h2>gin & juice</h2>
-            <p class="ings">grey whale gin, canton ginger liqueur, celery & cucumber juice</p>
-            <p class="menu-item-price">$12</p>
+            <h2>churchill old fashioned</h2>
+            <p class="ings">dickel no. 12 bourbon, demerara, bitters</p>
+        </div>
+        <br>
+        <div class="cocktail-item">
+            <h2>mezcal negroni</h2>
+            <p class="ings">el silencio mezcal, campari, noilly prat sweet vermouth</p>
+        </div><br>
+        <div class="cocktail-item">
+            <h2>puma rickshaw</h2>
+            <p class="ings">dickel no. 12 bourbon, demerara, bitters</p>
+        </div>
+        <br>
+        <div class="cocktail-item">
+            <h2>only fans</h2>
+            <p class="ings">smoke lab vodka, guava, lemon, sidecar of bubbles</p>
         </div>
         <a href="#menu" class="back-to-top-click">back to top</a>
         </div>`
