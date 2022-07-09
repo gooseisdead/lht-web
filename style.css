@@ -21,6 +21,7 @@ FONTS
 @import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
 
 
+
 /* ************
 VARIABLES
 *********** */
@@ -68,6 +69,7 @@ html, body {
     color: black;
     width: 100%;
     overflow-x: hidden;
+    background-color: var(--white-light);
 }
 
 a {
@@ -476,12 +478,12 @@ ABOUT
     border-radius: 5px;
   background-color: var(--white-light);
   border: 1px solid black;
-  opacity: 0.6;
+  opacity: 0.8;
   }
   
   .transbox p {
     margin: 5%;
-  font-weight: bold;
+  font-weight: bolder;
   color: #000000;
   }
 
@@ -705,7 +707,7 @@ M ENU SEC
 }
 
 .all-cocktails p {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 1000;
   -webkit-text-stroke: .1px rgb(251, 245, 245);
   color:white;
@@ -721,7 +723,7 @@ M ENU SEC
   text-shadow: 0 0 1px rgb(116, 111, 111),
 }
 
-#beer-menu-container {
+#show.shown-menu-items {
     margin-left: 40px;
     margin-right: 40px;
 }
@@ -740,6 +742,10 @@ M ENU SEC
 }
 
 .testi-item {
+        width:80%;
+        background-color: var(--white-light);
+        min-height: 100px;
+        float:left;
     width: calc((100% / 3) - 30px);
     margin:0 15px 30px;
     border: 2px solid var(--dark-light);
@@ -750,32 +756,11 @@ M ENU SEC
     background-size: contain;
 }
 
-.testi-item-1 {
-    width: calc((100% / 3) - 30px);
-    margin:0 15px 30px;
-    border: 2px solid var(--dark-light);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-    background-size: contain;
-}
-
-.testi-item-2 {
-    width: calc((100% / 3) - 30px);
-    margin:0 15px 30px;
-    border: 2px solid var(--dark-light);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
-
-.testi-item-3 {
-    width: calc((100% / 3) - 30px);
-    margin:0 15px 30px;
-    border: 2px solid var(--dark-light);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
+.testi-item h3 {
+    font-size: 44px;
+    color: #146c7c;
+    text-shadow: 0 0 0.55em #dadbe0;
+    text-shadow: 0 0 1px rgb(116, 111, 111),
 }
 
 .testi-author{
@@ -783,10 +768,13 @@ M ENU SEC
     justify-content: space-between;
     align-items: center;
 }
-.testi-author h3{
-    font-size: 16px;
+.testi-author h3 {
+    font-size: 24px;
     text-transform: capitalize;
     margin:0 0 3px;
+    color: #146c7c;
+    text-shadow: 0 0 0.55em #dadbe0;
+    text-shadow: 0 0 1px rgb(116, 111, 111),
 }
 .testi-author span{
     display: block;
@@ -888,14 +876,22 @@ M ENU SEC
     width: calc(100% / 3);
     padding:0 15px;
     text-align: center;
+    font-family: 'Smythe', cursive;
 }
 .footer-item h3{
-    text-transform: capitalize;
-    font-size: 22px;
-    margin:0 0 15px;
+    font-size: 38px;
+    color: #eef4f6;
+    text-shadow: 0 0 0.5em #909299;
+    text-shadow: 0 0 1px rgb(116, 111, 111);
+    font-family: 'Smythe', cursive;
 }
 .footer-item p{
     line-height: 30px;
+    font-size: 18px;
+    color: #699bac;
+    text-shadow: 0 0 0.5em #909299;
+    text-shadow: 0 0 1px rgb(116, 111, 111);
+    font-family: 'Smythe', cursive;
 }
 .footer-item .social-links{
     margin-top: 15px;
@@ -1134,12 +1130,6 @@ M ENU SEC
   to {opacity: 1}
 }
 
-.testi-item {
-    width:80%;
-    background-color: #717171;
-  min-height: 100px;
-  float:left;
-  }
 
   .section-title h2 {
     font-size: 45px;
@@ -1168,7 +1158,31 @@ M ENU SEC
   }
 
   .all-food-items p {
-    font-size: 28px;
+    font-size: 22px;
+    font-weight: 1000;
+    -webkit-text-stroke: .1px rgb(251, 245, 245);
+    color:white;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 0.25em #353639;
+    text-shadow: 0 0 5px rgb(9, 9, 9),
+  }
+
+  .shown-menu-items {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Smythe', cursive;
+    zoom: 120%;
+  }
+
+  .shown-menu-items h2 {
+    font-size: 44px;
+    color: #146c7c;
+    text-shadow: 0 0 0.55em #dadbe0;
+    text-shadow: 0 0 1px rgb(116, 111, 111),
+  }
+
+  .shown-menu-items p {
+    font-size: 22px;
     font-weight: 1000;
     -webkit-text-stroke: .1px rgb(251, 245, 245);
     color:white;
@@ -1177,3 +1191,27 @@ M ENU SEC
     text-shadow: 0 0 5px rgb(9, 9, 9),
   }
   
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+

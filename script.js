@@ -164,9 +164,19 @@ const menuTabs = document.querySelector(".menu-tabs");
 const menuContainer = document.querySelector(".menu-container")
 const shownMenuItems = document.querySelector(".shown-menu-items")
 
-function showBrunch() {
+function showWine() {
     shownMenuItems.innerHTML = 
-        `<p>brunch</p>
+        `<h2>wine</h2>
+        <h1 class="menu-item-price">$10</h1>
+        <p>woffler estate rose<br>
+            forge cellars reisling dry classique<br>
+            bridge lane sauvignon blanc<br>
+            woffler estate chardonnay<br>
+            bridge lane red blend<br>
+            woffler estate cabernet franc<br>
+            forge cellars pinot noir<br>
+            estate lieb sparkling pinot blanc<br>
+        </p>
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
         </div>`
@@ -179,13 +189,30 @@ function showCocktails() {
 
 function showBeer() {
     shownMenuItems.innerHTML = 
-        `<div id="beer-menu-container"></div>
+    `<div id="beer-menu-container"></div>
+        <h2>cans</h2>
+        <h1 class="menu-item-price">$8</h1>
+        <p class="beer-list-cans inline">bushwick pilsner<br>
+                save the robots IPA<br>
+                talea cherry float sour ale</p>
+        <h2>draught</h2>
+        <h1 class="menu-item-price">varied</h1>
+            <p class="beer-list-cans inline">coney island pilsner<br>
+                coney island mermaid IPA<br>
+                bronx city island sout<br>
+                bronx no res IPA<br>
+                bronx summer ale<br>
+                montauk easy riser<br>
+                captain lawrence classic lager<br>
+                collective arts guava gose<br>
+                six point anti resin IPA<br>
+                wild east prevernal love<br>
+                EBBS kolsch<br>
+                hudson north cider<br>
+            </p>
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
-        </div>
-        <script type="text/javascript">`
-          !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
-        `</script>`
+        </div>`
         
 }
 
@@ -195,15 +222,17 @@ function showFood() {
 
 function showDesserts() {
     shownMenuItems.innerHTML = 
-        `<p>dessert</p> 
+        `<h2>strawberry shortcake</h2> 
+            <p>southern biscuit, whipped cream, almond, mint</p>
+            <h1 class="menu-item-price">$10</h1>
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
         </div>`
 }
 
 menuTabs.addEventListener("click", function(e) {
-    if (e.target.id === "brunch") {
-        showBrunch()
+    if (e.target.id === "wine") {
+        showWine()
     } else if (e.target.id === "cocktails") {
         showCocktails()
     } else if (e.target.id === "dinner") {
@@ -215,14 +244,6 @@ menuTabs.addEventListener("click", function(e) {
     }
     
 })
-
-// const testSpot = document.querySelector(".menu-item-title")
-
-
-// const testButton = document.querySelector(".test")
-// testButton.addEventListener("click", function(e) {
-//     showBrunch()
-// })
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -241,50 +262,6 @@ function myFunction() {
     menuNavbar.classList.remove("sticky-menu");
   }
 }
-
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// // Next/previous controls
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// // Thumbnail image controls
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   let i;
-//   let slides = document.getElementsByClassName("mySlides");
-//   let dots = document.getElementsByClassName("dot");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-// }
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -315,6 +292,13 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+// shownMenuItems.innerHTML = 
+//         `<div id="beer-menu-container"></div>
+//         <div class="back-to-top-click">
+//         <a href="#menu" >back to top</a>
+//         </div>
+//         <script type="text/javascript">`
+//           !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
+//         `</script>`
 
 
