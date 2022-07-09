@@ -792,7 +792,6 @@ M ENU SEC
     max-width: 60px;
     border-radius: 50%;
     border: 0.2px solid var(--dark-light);
-    box-shadow: var(--shadow);
     transition: border-color 0.5s ease;
 }
 
