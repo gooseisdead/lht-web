@@ -154,6 +154,7 @@ SEC TITL
 }
 
 
+
 /* ***********
 BUTTONS 
 ********** */
@@ -272,6 +273,7 @@ img {
     margin-right: 15px;
     cursor: pointer;
     border: none;
+    background:url('IMG_1502.PNG') no-repeat;
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -557,7 +559,7 @@ M ENU SEC
     border: none;
     background-color: transparent;
     font-weight: 500;
-    color: var(--white);
+    color: var(--main-color);
     cursor: pointer;
     margin: 0 10px 10px;
     transition: color 0.3s ease;
@@ -565,7 +567,7 @@ M ENU SEC
 }
 
 .menu-tab-item:hover {
-    color: var(--main-color);
+    color:#717171
 }
 
 .menu-item {
@@ -922,7 +924,7 @@ M ENU SEC
 /* Style the navbar */
 .menu-section {
     overflow: hidden;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--white-light);
   }
   
   /* Navbar links */
@@ -988,7 +990,7 @@ M ENU SEC
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 700px;
   position: relative;
   margin: auto;
   background-color: black;
@@ -1073,3 +1075,4 @@ M ENU SEC
   from {opacity: .4}
   to {opacity: 1}
 }
+
