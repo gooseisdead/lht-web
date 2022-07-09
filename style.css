@@ -215,11 +215,11 @@ ANIMATION KEYFRAMES
 IMAGE SETTINGS
 ************ */
 
-/* img {
+img {
     flex:auto;
     vertical-align: middle;
     max-width: 100%;
-} */
+}
 
 .logo-img {
     zoom: 3%;
@@ -567,7 +567,7 @@ M ENU SEC
 }
 
 .menu-tabs {
-    padding: 0 15px;
+    padding: 0 1px;
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
@@ -660,6 +660,10 @@ M ENU SEC
     color: var(--white);
     cursor: pointer;
     transition: color 0.3s ease;
+}
+
+.shown-menu-items h2 {
+    inline-f
 }
 
 .beer-item {
