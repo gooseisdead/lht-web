@@ -523,7 +523,7 @@ ABOUT
     position: absolute;
     height: 100px;
     width: 100px;
-    border: 3px solid var(--main-color);
+    border: 3px solid var(--white-light);
     left: calc(60% - 50px);
     top: 12%;
     animation: spin01 10s linear infinite;
@@ -592,7 +592,7 @@ M ENU SEC
 }
 
 .menu-item {
-    width: 50%;
+    width: 100%;
     padding: 20px 15px;
     display: flex;
     align-items: center;
@@ -861,6 +861,7 @@ M ENU SEC
     background-position: center;
     position: relative;
     z-index: 1;
+    justify-content: center;
 }
 .footer::before{
     content: '';
@@ -894,6 +895,7 @@ M ENU SEC
     font-family: 'Smythe', cursive;
 }
 .footer-item .social-links{
+    justify-content: center;
     margin-top: 15px;
 }
 .footer-item .social-links a{
@@ -1143,6 +1145,10 @@ M ENU SEC
     font-family: 'Smythe', cursive;
   }
 
+  .food-item {
+    width: 100%;
+  }
+
   .all-food-items {
     margin-left: 15%;
     margin-right: 15%;
@@ -1168,8 +1174,8 @@ M ENU SEC
   }
 
   .shown-menu-items {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-family: 'Smythe', cursive;
     zoom: 120%;
   }
@@ -1213,5 +1219,7 @@ M ENU SEC
     background: #125688;
     color: white;
   }
+
+  .social-links {}
 
 

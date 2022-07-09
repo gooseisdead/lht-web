@@ -111,18 +111,8 @@ const foodItems =
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
         </div>
-        </div>
-        
-        `
-
-// const beerItems = 
-//         `<div id="menu-container"></div>`
-//         <script type="text/javascript">
-//           !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("menu-container",16629,62341)});
-//         </script>
+        </div>`
  
-
-
 // **********
 // toggle navbar
 // **********
@@ -242,7 +232,6 @@ menuTabs.addEventListener("click", function(e) {
     } else if (e.target.id === "desserts") {
         showDesserts()
     }
-    
 })
 
 // When the user scrolls the page, execute myFunction
@@ -291,14 +280,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-// shownMenuItems.innerHTML = 
-//         `<div id="beer-menu-container"></div>
-//         <div class="back-to-top-click">
-//         <a href="#menu" >back to top</a>
-//         </div>
-//         <script type="text/javascript">`
-//           !function getScript(e,t){var a=document.createElement("script"),n=document.getElementsByTagName("script")[0];a.async=1,n.parentNode.insertBefore(a,n),a.onload=a.onreadystatechange=function(e,n){(n||!a.readyState||/loaded|complete/.test(a.readyState))&&(a.onload=a.onreadystatechange=null,a=undefined,n||t&&t())},a.src=e}("https://embed-menu-preloader.untappdapi.com/embed-menu-preloader.min.js",function(){PreloadEmbedMenu("beer-menu-container",16629,62341)});
-//         `</script>`
-
-
