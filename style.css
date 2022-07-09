@@ -114,6 +114,7 @@ p {
 .row {
     display:flex;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .justify-content-between {
@@ -662,9 +663,6 @@ M ENU SEC
     transition: color 0.3s ease;
 }
 
-.shown-menu-items h2 {
-    inline-f
-}
 
 .beer-item {
     justify-content: center;
@@ -736,6 +734,7 @@ M ENU SEC
 .testimonials-section {
     background-color:#146c7c;
     padding-bottom: 50px;
+    padding: 20px;
 }
 
 .testimonials-section h2 {
@@ -754,10 +753,9 @@ M ENU SEC
         
     margin:0 5px 10px;
     border: 2px solid var(--dark-light);
-    padding: 15px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: var(--shadow);
-    background-image: url('./tonys.jpg');
     background-size: contain;
 }
 
@@ -1234,6 +1232,10 @@ M ENU SEC
 
  .testi-author-img {
     padding: 1px;
+ }
+
+ .testi-row {
+    padding: 20px;
  }
  
 
