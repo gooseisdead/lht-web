@@ -353,7 +353,6 @@ img {
     width: 200px;
     background-color: var(--dark-light);
     box-shadow: var(--shadow);
-    overflow-x: hidden;
     overflow-y: auto;
     padding: 88px 0 48px;
     transition: transform 0.5s ease;
@@ -700,15 +699,14 @@ M ENU SEC
     margin-left: 15%;
     margin-right: 15%;
     font-family: 'Smythe', cursive;
-    zoom: 100%;
-    /* background-image: url("logo.png"); */
+
 }
 
 .all-cocktails h2 {
     font-size: 44px;
     color: #146c7c;
     text-shadow: 0 0 0.55em #dadbe0;
-  text-shadow: 0 0 1px rgb(116, 111, 111),
+    text-shadow: 0 0 1px rgb(116, 111, 111),
 }
 
 .all-cocktails p {
@@ -1184,18 +1182,18 @@ M ENU SEC
     margin-left: 5%;
     margin-right: 5%;
     font-family: 'Smythe', cursive;
-    zoom: 100%;
   }
 
   .shown-menu-items h2 {
-    font-size: 44px;
+    font-size: 36px;
+    font-weight: bolder;
     color: #146c7c;
     text-shadow: 0 0 0.55em #dadbe0;
     text-shadow: 0 0 1px rgb(116, 111, 111),
   }
 
   .shown-menu-items p {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 1000;
     -webkit-text-stroke: .1px rgb(251, 245, 245);
     color:white;
@@ -1240,6 +1238,3 @@ M ENU SEC
     padding: 20px;
     justify-content: center;
  }
- 
-
-
