@@ -176,7 +176,6 @@ BUTTONS
     color: white;
     line-height: 1.5;
     user-select: none;
-    border: none;
 }
 
 .btn-default {
@@ -277,12 +276,12 @@ img {
     margin-right: 15px;
     cursor: pointer;
     border: none;
-    background:url('IMG_1502.PNG') no-repeat;
-    background-color: transparent;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    border-radius: 11px;
 }
 
 .header .nav-toggler.active {
@@ -295,18 +294,20 @@ img {
 }
 
 .header .nav-toggler span {
-    height: 2px;
+    height: 20px;
     width: 39px;
     display: block;
-    background-color: var(--white);
+    background-color: var(--white-light);
     position: relative;
     overflow-x: hidden;
+    outline: 2px solid rgb(5, 5, 5);
 }
 
 .header .nav-toggler.active span {
     background-color: transparent;
     transition: background-color 0.5s ease;
     overflow-x: hidden;
+    
 }
 
 .header .nav-toggler span::before,
@@ -317,8 +318,10 @@ img {
     top:0;
     height: 100%;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--white-light);
     overflow-x: hidden;
+    
+    
 }
 
 .header .nav-toggler span::before {
