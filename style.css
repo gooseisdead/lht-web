@@ -280,7 +280,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
     border-radius: 11px;
 }
 
