@@ -940,7 +940,7 @@ section{
   }
 
   .food-item {
-    display: inline-block;
+    /* display: inline-block;
     position: relative;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -951,7 +951,7 @@ section{
     height: auto;
     width: 90%;
     box-shadow: 9px 6px rgb(48, 49, 48);
-    border-radius: 10px; 
+    border-radius: 10px;  */
   }
 
   .all-food-items {
@@ -982,13 +982,17 @@ section{
   }
 
   .all-food-items p {
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+/* 
     font-size: 26px;
     font-weight: 1000;
     -webkit-text-stroke: .1px rgb(251, 245, 245);
     color:white;
     letter-spacing: 0.02em;
     text-shadow: 0 0 0.25em #353639;
-    text-shadow: 0 0 5px rgb(9, 9, 9),
+    text-shadow: 0 0 5px rgb(9, 9, 9), */
   }
 
   .shown-menu-items {
@@ -1007,14 +1011,18 @@ section{
   }
 
   .shown-menu-items p {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 100;
+    color: black;
+
+    /* font-size: 20px;
     font-weight: 1000;
     -webkit-text-stroke: .1px rgb(251, 245, 245);
     color:white;
     letter-spacing: 0.02em;
     text-shadow: 0 2 0.85em #353639;
     text-shadow: 0 0 5px rgb(9, 9, 9);
-    text-transform: capitalize;
+    text-transform: capitalize; */
   }
   
   .fa {

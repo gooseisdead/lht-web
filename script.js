@@ -201,6 +201,32 @@ function showDesserts() {
         `<h2>strawberry shortcake</h2> 
             <p>southern biscuit, whipped cream, almond, mint</p>
             <h1 class="menu-item-price">$10</h1>
+            <h2>apple torte tatin</h2> 
+            <p>new york state cortland apples, pastry, marscapone, herbs</p>
+            <h1 class="menu-item-price">$10</h1>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+
+function showSalads() {
+    shownMenuItems.innerHTML = 
+        `<h2>heirloom harlem harvest</h2> 
+            <p>heirloom tomatoes, burrata, cucumber, arugala, basil, lemon herb oil </p>
+            <h1 class="menu-item-price">$16</h1>
+            <h2>beet tartare</h2> 
+            <p>red beets, avocado, frisee, mache, goat cheese, almond, rye crackers</p>
+            <h1 class="menu-item-price">$16</h1>
+            <h2>baby spinach</h2> 
+            <p>garlic, olive oil, lemon</p>
+            <h1 class="menu-item-price">$8</h1>
+            <h2>broccoli rabe</h2> 
+            <p>garlic, olive oil, lemon</p>
+            <h1 class="menu-item-price">$8</h1>
+            <h2>truffle fries</h2> 
+            <p>sea salt, parmesan, herbs</p>
+            <h1 class="menu-item-price">$10</h1>
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
         </div>`
@@ -223,6 +249,9 @@ function showBar() {
             <p class="sauces">asian • buffalo jerk</p>
             <h1 class="menu-item-price inline">&nbsp;&nbsp;$12</p>
             </div>
+            <h2>truffle fries</h2> 
+            <p>sea salt, parmesan, herbs</p>
+            <h1 class="menu-item-price">$10</h1>
             <div class="food-item">
             <h2>fried cauliflower</h2>
             <p>vegan ranch</p>
@@ -297,7 +326,7 @@ menuTabs.addEventListener("click", function(e) {
     } else if (e.target.id === "starters") {
         showStarters()
     } else if (e.target.id === "salads") {
-        showBar()
+        showSalads()
     }
 })
 
