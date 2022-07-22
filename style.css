@@ -54,6 +54,7 @@ img{
 }
 a{
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
 }
 ul{
     list-style: none;
@@ -674,12 +675,17 @@ section{
     padding:0 15px;
     text-align: center;
 }
+
+.food-item a {
+    font-family: 'Poppins', sans-serif;
+}
 .footer-item h3{
     text-transform: capitalize;
     font-size: 22px;
     margin:0 0 15px;
 }
 .footer-item p{
+    font-family: 'Poppins', sans-serif;
     line-height: 30px;
 }
 .footer-item .social-links{
