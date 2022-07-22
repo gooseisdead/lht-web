@@ -65,6 +65,7 @@ h1{
 h2{
     font-weight: 600;
     color: var(--main-color);
+    justify-content: center;
 }
 h3,
 h4,
@@ -542,6 +543,7 @@ section{
 .testimonials-section{
     background-color: var(--dark);
     padding-bottom: 50px;
+    justify-content: center;
 }
 .testi-item{
  
@@ -562,14 +564,17 @@ section{
     align-items: center;
 }
 .testi-author h3{
-    font-size: 16px;
+    width: 100%;
+    font-size: 34px;
+    font-weight: 400px;
+    -webkit-text-stroke: var(--main-color);
     text-transform: capitalize;
-    margin:0 0 3px;
 }
 .testi-author span{
     display: block;
-    font-size: 14px;
+    font-size: 24px;
     text-transform: capitalize;
+    color:#146c7c
 }
 .testi-author img{
     max-width: 60px;
@@ -1016,6 +1021,17 @@ section{
     justify-content: center;
  }
 
+ .testi-row p {
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    -webkit-text-stroke: .1px rgb(251, 245, 245);
+    color:black;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2 0.85em #353639;
+    text-shadow: 0 0 5px rgb(9, 9, 9),
+ }
+
  .ings p {
     font-size: 20px;
     font-weight: 1000;
@@ -1028,4 +1044,13 @@ section{
 
  .logo-img {
     background-color: transparent;
+ }
+
+ .event-head {
+    justify-content: center;
+ }
+ .event-head h2 {
+    font-family: "Smythe", cursive;
+    color:rgb(197, 189, 189);
+    justify-content: center;
  }
