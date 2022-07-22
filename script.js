@@ -60,10 +60,12 @@ const cocktails =
 
 const foodItems = 
         `<div class="all-food-items">
-            <div class="food-item">
+        <div class="food-item">
             <h2>charcuterie<h2>
             <p>selection of cured meats and cheeses, spreads and fruit</p>
             <h1 class="menu-item-price inline">&nbsp;&nbsp;$22</p>
+            </div>
+        <div class="food-item">
             <h2>wings</h2>
             <p class="sauces">asian • buffalo jerk</p>
             <h1 class="menu-item-price inline">&nbsp;&nbsp;$12</p>
@@ -72,45 +74,45 @@ const foodItems =
             <h2>deviled-eggs</h2>
             <p>prosciutto, crispy onion, and chives</p>
             <h1 class="menu-item-price">$12</h1>
-        </div>
+            </div>
         <div class="food-item">
             <h2>beet tartare</h2>
             <p>red beets, avocado, frisse, mache, goat cheese, almond, rye crackers</p>
             <h1 class="menu-item-price">$16</h3>
-        </div>
+            </div>
         <div class="food-item">
             <h2>harlem harvest</h2>
             <p>arugala, baby spinach, asparagus, radish, shaved parmesean, crispy chick peas, lemon tarmeric tahini</p>
             <h1 class="menu-item-price">$10</h3>
-        </div>
+            </div>
         <div class="food-item">
             <h2>fried cauliflower</h2>
             <p>vegan ranch</p>
             <h1 class="menu-item-price">$10</h3>
-        </div>
+            </div>
         <div class="food-item">
             <h2>zucchini blossoms</h2>
             <p>zucchini flowers, ricotta, reggiano, crispy capers, saffron aioli</p>
             <h1 class="menu-item-price">$15</h1>
-        </div>
+            </div>
         <div class="food-item">
             <h2 inline>truffle mac</h2>
             <p>gruyere and new york cheddar, grana padana, truffle, panko</p>
             <h1 class="menu-item-price inline">&nbsp;&nbsp;$18</h2>
-        </div>
+            </div>
         <div class="food-item">
             <h2>fried pickles</h2>
             <p>buttermilk aioli</p>
             <h1 class="menu-item-price">$10</h3>
-        </div>
+            </div>
         <div class="food-item">
             <h2>lobster bao</h2>
             <p>maine lobster, asian slaw, hoisin, cilantro, mint, bao bun</p>
             <h1 class="menu-item-price">$22</h3>
-        </div>
+            </div>
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
-        </div>
+            </div>
         </div>`
  
 // **********
