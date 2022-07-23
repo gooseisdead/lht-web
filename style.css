@@ -467,6 +467,8 @@ section{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
+   
+    
 }
 .menu-tab-item{
     font-size: 18px;
@@ -818,7 +820,7 @@ section{
   }
 
   .menu-tabs-navbar .menu-tab-item {
-    
+    font-weight: bolder;
     text-shadow: 0 0 0.15em #e9ebf0;
     text-shadow: 0 0 1px rgb(197, 189, 189),
   }
@@ -991,14 +993,7 @@ section{
     font-size: 22px;
     font-weight: 800;
     color: black;
-/* 
-    font-size: 26px;
-    font-weight: 1000;
-    -webkit-text-stroke: .1px rgb(251, 245, 245);
-    color:white;
-    letter-spacing: 0.02em;
-    text-shadow: 0 0 0.25em #353639;
-    text-shadow: 0 0 5px rgb(9, 9, 9), */
+    font-family: 'Poppins', sans-serif;
   }
 
   .shown-menu-items {
@@ -1010,9 +1005,10 @@ section{
   .shown-menu-items h2 {
     width: 100%;
     font-size: 38px;
-    font-weight: 400px;
-    -webkit-text-stroke: var(--main-color);
+   
+    /* -webkit-text-stroke: var(--main-color); */
     text-transform: capitalize;
+    
 
   }
 
@@ -1020,6 +1016,8 @@ section{
     font-size: 22px;
     font-weight: 100;
     color: black;
+    font-family: 'Poppins', sans-serif;
+
 
     /* font-size: 20px;
     font-weight: 1000;
