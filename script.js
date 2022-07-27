@@ -246,7 +246,7 @@ function showBar() {
         </div>
         <div class="food-item">
             <h2>wings</h2>
-            <p class="sauces">asian • buffalo jerk</p>
+            <p class="sauces">asian or buffalo jerk</p>
             <h1 class="menu-item-price inline">&nbsp;&nbsp;$12</p>
             </div>
             <h2>truffle fries</h2> 
@@ -376,3 +376,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
