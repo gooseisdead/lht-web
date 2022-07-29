@@ -235,7 +235,7 @@ function showSalads() {
 function showBar() {
     shownMenuItems.innerHTML = 
         `<div class="food-item">
-        <h2>charcuterie<h2>
+        <h2>charcuterie</h2>
         <p>selection of cured meats + cheeses, spreads + fruit</p>
         <h1 class="menu-item-price inline">&nbsp;&nbsp;$22</p>
         </div>

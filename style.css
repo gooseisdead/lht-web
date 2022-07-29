@@ -112,6 +112,12 @@ section{
 .section-title h2{
     font-size: 35px;
     text-transform: capitalize;
+    color: var(--main-color);
+    text-shadow:
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 15px #fff;
+    
 }
 .section-title h2::before{
     content: attr(data-title);
@@ -581,17 +587,19 @@ section{
     align-items: center;
 }
 .testi-author h3{
-    width: 100%;
     font-size: 34px;
-    font-weight: 400px;
-    -webkit-text-stroke: var(--main-color);
     text-transform: capitalize;
+    color: var(--main-color);
+    text-shadow:
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 15px #fff;
 }
 .testi-author span{
     display: block;
     font-size: 24px;
     text-transform: capitalize;
-    color:#146c7c
+    color: black;
 }
 .testi-author img{
     max-width: 60px;
@@ -833,10 +841,22 @@ section{
     padding-top: 600px;
   }
 
+  .menu-tabs-navbar {
+    border: 4px solid var(--main-color);
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+    padding-top: 12px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
   .menu-tabs-navbar .menu-tab-item {
     font-weight: bolder;
+    font-size: 24px;
+    padding: 2px;
     text-shadow: 0 0 0.15em #e9ebf0;
-    text-shadow: 0 0 1px rgb(197, 189, 189),
+    text-shadow: 0 0 1px rgb(197, 189, 189);
+    
   }
   .back-to-top-row {
       margin-left: 50%;
@@ -996,7 +1016,14 @@ section{
     
   }
 
-  .all-food-items h2 {
+  .pride {
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* .all-food-items h2 {
     font-size: 44px;
     color: #146c7c;
     text-shadow: 0 0 0.55em #dadbe0;
@@ -1008,39 +1035,29 @@ section{
     font-weight: 800;
     color: black;
     font-family: 'Poppins', sans-serif;
-  }
+  } */
 
   .shown-menu-items {
     margin-left: 1%;
-    margin-right: 1%;
-    
+    margin-right: 1%;  
   }
 
   .shown-menu-items h2 {
     width: 100%;
     font-size: 38px;
-   
-    /* -webkit-text-stroke: var(--main-color); */
     text-transform: capitalize;
-    
-
+    color: var(--main-color);
+    text-shadow:
+          0 0 5px #fff,
+          0 0 10px #fff,
+          0 0 15px #fff;
   }
 
   .shown-menu-items p {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 100;
     color: black;
     font-family: 'Poppins', sans-serif;
-
-
-    /* font-size: 20px;
-    font-weight: 1000;
-    -webkit-text-stroke: .1px rgb(251, 245, 245);
-    color:white;
-    letter-spacing: 0.02em;
-    text-shadow: 0 2 0.85em #353639;
-    text-shadow: 0 0 5px rgb(9, 9, 9);
-    text-transform: capitalize; */
   }
   
   .fa {
