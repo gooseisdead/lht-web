@@ -358,12 +358,12 @@ section{
     text-align: center;
     color: #050505;
 }
-.home-text h1{
+/* .home-text h1{
     font-family: var(--cursive-font);
     font-size: 60px;
     line-height: 75px;
     margin:0 0 5px;
-}
+} */
 .home-text p{
     margin:0 0 30px;
     font-family: 'Poppins', sans-serif;
