@@ -109,9 +109,9 @@ section{
     text-transform: capitalize;
     color: var(--main-color);
     text-shadow:
-          0 0 5px #fff,
-          0 0 10px #fff,
-          0 0 15px #fff;
+          0 0 1px #fff,
+          0 0 4px #fff,
+          0 0 8px #fff;
     
 }
 .section-title h2::before{
