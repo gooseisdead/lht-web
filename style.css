@@ -358,12 +358,12 @@ section{
     text-align: center;
     color: #050505;
 }
-/* .home-text h1{
+.home-text h1{
     font-family: var(--cursive-font);
     font-size: 60px;
     line-height: 75px;
     margin:0 0 5px;
-} */
+}
 .home-text p{
     margin:0 0 30px;
     font-family: 'Poppins', sans-serif;
@@ -1043,9 +1043,9 @@ section{
     text-transform: capitalize;
     color: var(--main-color);
     text-shadow:
-          0 0 5px #fff,
-          0 0 10px #fff,
-          0 0 15px #fff;
+          0 0 1px #fff,
+          0 0 4px #fff,
+          0 0 8px #fff;
   }
 
   .shown-menu-items p {
