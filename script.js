@@ -1,3 +1,7 @@
+
+
+
+
 const cocktails = 
         `<div class="all-cocktails">
         <div class="cocktail-item">
