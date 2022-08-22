@@ -4,6 +4,10 @@ fonts
 --------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap');
 
 /* --------------
  variables 
@@ -57,8 +61,6 @@ ul{
 }
 h1{
     color:#000000;
-    margin-left: 30px;
-    margin-right: 100px;
 }
 h2{
     font-weight: 600;
@@ -361,13 +363,13 @@ section{
     color: #050505;
 }
 .home-text h1{
-    font-family: var(--cursive-font);
-    font-size: 60px;
-    line-height: 75px;
-    margin:0 0 5px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 .home-text p{
-    margin:0 0 30px;
+    margin:0 0 5px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -475,8 +477,8 @@ section{
 }
 .menu-tab-item{
     font-size: 18px;
-    font-family: inherit;
-    text-transform: capitalize;
+    font-family: 'Xanh Mono', monospace;
+    text-transform: uppercase;
     border:none;
     background-color: transparent;
     font-weight: 500;
@@ -747,10 +749,7 @@ section{
     }
 }
 @media(max-width:767px){
-    .home-text h1{
-        font-size: 50px;
-        line-height: 65px;
-    }
+   
     .menu-item,
     .about-text, 
     .about-img{
@@ -1041,7 +1040,9 @@ section{
   .shown-menu-items h2 {
     width: 100%;
     font-size: 38px;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    font-family: 'Xanh Mono', monospace;
+    /* font-family: 'Josefin Slab', serif; */
     color: var(--main-color);
     text-shadow:
           0 0 1px #fff,

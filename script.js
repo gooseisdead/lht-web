@@ -97,6 +97,24 @@ const foodItems =
             <h1 class="menu-item-price">$22</h1>
             </div>
         <div class="back-to-top-click">
+        <h2>heirloom harlem harvest</h2> 
+            <p>heirloom tomatoes, burrata, cucumber, arugala, basil, lemon herb oil </p>
+            <h1 class="menu-item-price">$16</h1>
+            <h2>beet tartare</h2> 
+            <p>red beets, avocado, frisee, mache, goat cheese, almond, rye crackers</p>
+            <h1 class="menu-item-price">$16</h1>
+            <h2>baby spinach</h2> 
+            <p>garlic, olive oil, lemon</p>
+            <h1 class="menu-item-price">$8</h1>
+            <h2>broccoli rabe</h2> 
+            <p>garlic, olive oil, lemon</p>
+            <h1 class="menu-item-price">$8</h1>
+            <h2>truffle fries</h2> 
+            <p>sea salt, parmesan, herbs</p>
+            <h1 class="menu-item-price">$10</h1>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>
         <a href="#menu" >back to top</a>
             </div>
         `
@@ -214,27 +232,27 @@ function showDesserts() {
 }
 
 
-function showSalads() {
-    shownMenuItems.innerHTML = 
-        `<h2>heirloom harlem harvest</h2> 
-            <p>heirloom tomatoes, burrata, cucumber, arugala, basil, lemon herb oil </p>
-            <h1 class="menu-item-price">$16</h1>
-            <h2>beet tartare</h2> 
-            <p>red beets, avocado, frisee, mache, goat cheese, almond, rye crackers</p>
-            <h1 class="menu-item-price">$16</h1>
-            <h2>baby spinach</h2> 
-            <p>garlic, olive oil, lemon</p>
-            <h1 class="menu-item-price">$8</h1>
-            <h2>broccoli rabe</h2> 
-            <p>garlic, olive oil, lemon</p>
-            <h1 class="menu-item-price">$8</h1>
-            <h2>truffle fries</h2> 
-            <p>sea salt, parmesan, herbs</p>
-            <h1 class="menu-item-price">$10</h1>
-        <div class="back-to-top-click">
-        <a href="#menu" >back to top</a>
-        </div>`
-}
+// function showSalads() {
+//     shownMenuItems.innerHTML = 
+//         `<h2>heirloom harlem harvest</h2> 
+//             <p>heirloom tomatoes, burrata, cucumber, arugala, basil, lemon herb oil </p>
+//             <h1 class="menu-item-price">$16</h1>
+//             <h2>beet tartare</h2> 
+//             <p>red beets, avocado, frisee, mache, goat cheese, almond, rye crackers</p>
+//             <h1 class="menu-item-price">$16</h1>
+//             <h2>baby spinach</h2> 
+//             <p>garlic, olive oil, lemon</p>
+//             <h1 class="menu-item-price">$8</h1>
+//             <h2>broccoli rabe</h2> 
+//             <p>garlic, olive oil, lemon</p>
+//             <h1 class="menu-item-price">$8</h1>
+//             <h2>truffle fries</h2> 
+//             <p>sea salt, parmesan, herbs</p>
+//             <h1 class="menu-item-price">$10</h1>
+//         <div class="back-to-top-click">
+//         <a href="#menu" >back to top</a>
+//         </div>`
+// }
 
 function showBar() {
     shownMenuItems.innerHTML = 
