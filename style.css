@@ -1127,5 +1127,11 @@ section{
     justify-content: center;
  }
 
+ .spirits-link {
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+ }
+
 
  

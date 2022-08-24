@@ -59,6 +59,9 @@ const cocktails =
             <p class="ings">smoke lab vodka, guava, lemon, sidecar of bubbles</p>
             <p class="ings">* can be made zero-proof using our NA spirit partners</p>
         </div>
+        <div class="spirits-link">
+                <a href="spirits.html">List of Spirits</a>
+            </div>
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
         </div>
@@ -115,8 +118,7 @@ const foodItems =
         <div class="back-to-top-click">
         <a href="#menu" >back to top</a>
         </div>
-        <a href="#menu" >back to top</a>
-            </div>
+        
         `
  
 // **********
