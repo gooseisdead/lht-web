@@ -126,7 +126,8 @@ const foodItems =
 // **********
 
 const navToggler = document.querySelector(".nav-toggler");
-navToggler.addEventListener("click", toggleNav);
+if(navToggler){
+navToggler.addEventListener("click", toggleNav);}
 
 function toggleNav() {
     navToggler.classList.toggle("active");
@@ -158,6 +159,7 @@ window.addEventListener("scroll", function() {
 
 
 const menuTabs = document.querySelector(".menu-tabs");
+const spiritsTabs = document.querySelector(".spirits-tabs");
 
 const menuContainer = document.querySelector(".menu-container")
 const shownMenuItems = document.querySelector(".shown-menu-items")
@@ -334,7 +336,8 @@ function showStarters() {
 }
 
 
-menuTabs.addEventListener("click", function(e) {
+if(menuTabs) {
+    menuTabs.addEventListener("click", function(e) {
     if (e.target.id === "wine") {
         showWine()
     } else if (e.target.id === "cocktails") {
@@ -351,8 +354,41 @@ menuTabs.addEventListener("click", function(e) {
         showStarters()
     } else if (e.target.id === "salads") {
         showSalads()
+    } else if (e.target.id === "whiskey") {
+        showWhiskey()
+    } else if (e.target.id === "gin") {
+        showGin() 
+    } else if (e.target.id === "vodka") {
+        showVodka()
+    } else if (e.target.id === "tequila") {
+        showTequila()
+    } else if (e.target.id === "rum") {
+        showRum()
+    } else if (e.target.id === "cordials") {
+        showCordials()
+    } else if (e.target.id === "aperitif") {
+        showAperitif()
     }
-})
+});}
+
+if(spiritsTabs){
+spiritsTabs.addEventListener("click", function(e) {
+    if (e.target.id === "whiskey") {
+        showWhiskey()
+    } else if (e.target.id === "gin") {
+        showGin() 
+    } else if (e.target.id === "vodka") {
+        showVodka()
+    } else if (e.target.id === "tequila") {
+        showTequila()
+    } else if (e.target.id === "rum") {
+        showRum()
+    } else if (e.target.id === "cordials") {
+        showCordials()
+    } else if (e.target.id === "aperitif") {
+        showAperitif()
+    }
+})}
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
@@ -397,7 +433,138 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  if(slides && style){
+  slides[slideIndex-1].style.display = "block";}
+  if(dots){
+  dots[slideIndex-1].className += " active";}
 }
+
+function showWhiskey() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        <p>whiskey</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+function showVodka() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        <p>vodka</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+function showRum() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        <p>rum</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+function showTequila() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        <p>tequila</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+function showGin() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        <p>gin</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+function showCordials() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        <p>cordials</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+function showAperitif() {
+    shownMenuItems.innerHTML = 
+        `<div class="spirits-listed">
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        <p>aperitif</p>
+        </div>
+        <div class="back-to-top-click">
+        <a href="#menu" >back to top</a>
+        </div>`
+}
+
+
+
 
